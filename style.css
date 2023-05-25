@@ -19,6 +19,40 @@ body
     background-color: #e6e6fa;
     color: #028284;
     font-family: 'Open Sans', sans-serif;
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
+
+.square p
+{
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.timer
+{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.timer-item span
+{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
