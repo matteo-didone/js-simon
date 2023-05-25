@@ -20,10 +20,10 @@ const x = setInterval(function()
         const seconds = Math.floor((gapTime % (1000 * 60)) / 1000); //1000 milliseconds = 1 second
 
         // Display the result in the element with the classes "days", "hours", "minutes" and "seconds"
-        document.getElementsByClassName("days").innerHTML = days; 
-        document.getElementsByClassName("hours").innerHTML = hours;
-        document.getElementsByClassName("minutes").innerHTML = minutes;
-        document.getElementsByClassName("seconds").innerHTML = seconds;
+        document.getElementById("days").innerHTML = days; 
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;;
+        document.getElementById("seconds").innerHTML = seconds;
 
         // If the count down is finished, write some text 
         if (gapTime < 0) 
@@ -31,12 +31,12 @@ const x = setInterval(function()
             // I stop the timer with the clearInterval() method
             clearInterval(x);
             // I stop displaying the timer
-            const timerElement = document.getElementsByClassName("timer");
+            const timerElement = document.getElementById("timer");
             timerElement.classList.add("hidden");
 
             // I display the message "The class is over"
-            const timerOverElement = document.getElementsByClassName("timerOver");
+            const timerOverElement = document.getElementById("timerOver");
             timerOverElement.classList.remove("hidden");
         }
     }
-, 1000); //1000 milliseconds = 1 second
+, 500); //500 milliseconds = 0.5 second
