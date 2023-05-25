@@ -1,0 +1,24 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore built output
+/dist/
+/out/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore user-specific VS Code settings
+.vscode/settings.json
+
+# Ignore workspace-specific VS Code settings
+.vscode/*.code-workspace
+
+# Ignore JavaScript Debug files
+*.js.map
+
+# Ignore TypeScript declaration files
+*.d.ts
