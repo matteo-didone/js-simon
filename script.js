@@ -31,12 +31,12 @@ const x = setInterval(function()
             // I stop the timer with the clearInterval() method
             clearInterval(x);
             // I stop displaying the timer
-            const timerElement = document.getElementById("timer");
+            const timerElement = document.getElementsByClassName("timer")[0];
             timerElement.classList.add("hidden");
 
             // I display the message "The class is over"
-            const timerOverElement = document.getElementById("timerOver");
+            const timerOverElement = document.getElementsByClassName("timerOver")[0];
             timerOverElement.classList.remove("hidden");
         }
     }
-, 500); //500 milliseconds = 0.5 second
+, 1000); //1000 milliseconds = 1 second
