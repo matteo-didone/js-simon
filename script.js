@@ -32,10 +32,12 @@ const x = setInterval(function()
             clearInterval(x);
             // I stop displaying the timer
             const timerElement = document.getElementsByClassName("timer")[0];
+            // I add the class "hidden" to the element so that it won't stop taking up space on the page
             timerElement.classList.add("hidden");
 
             // I display the message "The class is over"
             const timerOverElement = document.getElementsByClassName("timerOver")[0];
+            // I remove the class "hidden" to the element so that it will start displaying on the page
             timerOverElement.classList.remove("hidden");
         }
     }
